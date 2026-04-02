@@ -64,6 +64,21 @@ const ogImage = new URL('/agent-engineering-studio-site/og-image.png', canonical
 <body>
   <slot />
 
+  <!-- Buy Me a Coffee floating widget -->
+  <script
+    is:inline
+    data-name="BMC-Widget"
+    data-cfasync="false"
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="f9t3zol"
+    data-description="Support me on Buy me a coffee!"
+    data-message=""
+    data-color="#FF813F"
+    data-position="Right"
+    data-x_margin="18"
+    data-y_margin="18"
+  ></script>
+
   <!-- Easter egg console message -->
   <script is:inline>
     console.log('%c\uD83D\uDD2C Agent Engineering Studio', 'font-size:16px;font-weight:bold;color:#00e5ff');

@@ -8,9 +8,8 @@ const books = [
   {
     slug: 'knowledge-graph',
     title: 'Knowledge Graph: dalla Teoria alla Pratica',
-    edition: '2ª Edizione',
-    date: 'Marzo 2026',
-    pages: '189 pagine full color',
+    date: 'Aprile 2026',
+    pages: '190 pagine full color',
     formats: 'Paperback & Kindle',
     description:
       'Un percorso completo dalla teoria accademica all\'implementazione enterprise con Python, Neo4j, Redis, RAG, MCP e Agent Framework.',
@@ -50,8 +49,6 @@ const books = [
 
             <div class="book-card__body">
               <div class="book-card__meta">
-                <span class="book-card__edition">{book.edition}</span>
-                <span class="book-card__dot">&middot;</span>
                 <span class="book-card__date">{book.date}</span>
               </div>
 
@@ -216,14 +213,6 @@ const books = [
     color: var(--color-accent);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-  }
-
-  .book-card__dot {
-    color: var(--color-text-muted);
-  }
-
-  .book-card__date {
-    color: var(--color-text-muted);
   }
 
   .book-card__title {
