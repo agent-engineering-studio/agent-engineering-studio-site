@@ -10,8 +10,9 @@
   --color-bg: #0a0e17;
   --color-bg-elevated: #111827;
   --color-bg-card: #151d2e;
-  --color-accent: #00e5ff;
-  --color-accent-glow: rgba(0, 229, 255, 0.15);
+  --color-accent: #2196F3;
+  --color-accent-glow: rgba(33, 150, 243, 0.15);
+  --color-accent-dark: #1a7abf;
   --color-cta: #f5a623;
   --color-cta-hover: #ffbe4a;
   --color-text: #e0e6ed;
@@ -104,10 +105,10 @@ body::before {
   inset: 0;
   z-index: -1;
   background-image:
-    linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(rgba(0, 229, 255, 0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 229, 255, 0.015) 1px, transparent 1px);
+    linear-gradient(rgba(33, 150, 243, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(33, 150, 243, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(33, 150, 243, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(33, 150, 243, 0.015) 1px, transparent 1px);
   background-size:
     100px 100px,
     100px 100px,

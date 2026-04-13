@@ -7,6 +7,9 @@
 
 <footer class="footer">
   <div class="container">
+    <div class="footer__logo">
+      <img src="/logo-icon.png" alt="Agent Engineering Studio" class="footer__logo-img" width="40" height="40" />
+    </div>
     <p class="footer__copy">&copy; 2025–2026 Agent Engineering Studio</p>
     <p class="footer__meta">
       Built with <a href="https://astro.build" target="_blank" rel="noopener noreferrer">Astro</a>
@@ -23,6 +26,24 @@
     padding: var(--space-2xl) 0;
     text-align: center;
     border-top: 1px solid var(--color-border);
+  }
+
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-md);
+  }
+
+  .footer__logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    opacity: 0.7;
+    transition: opacity var(--transition-base);
+  }
+
+  .footer__logo-img:hover {
+    opacity: 1;
   }
 
   .footer__copy {

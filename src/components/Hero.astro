@@ -1,41 +1,29 @@
 ---
 /*
  * Hero.astro — Sezione hero principale
- * Contiene titolo, tagline e sottotitolo.
+ * Contiene logo, tagline e sottotitolo.
  * Per modificare i testi: aggiorna direttamente l'HTML qui sotto.
  */
 ---
 
 <header class="hero">
   <div class="container">
-    <!-- SVG animato decorativo: nodi/agenti connessi -->
-    <div class="hero__nodes animate-in" aria-hidden="true">
-      <svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" class="nodes-svg">
-        <!-- Nodi -->
-        <circle cx="60" cy="60" r="8" class="node node--1" />
-        <circle cx="160" cy="30" r="6" class="node node--2" />
-        <circle cx="200" cy="90" r="10" class="node node--3" />
-        <circle cx="300" cy="50" r="7" class="node node--4" />
-        <circle cx="340" cy="95" r="5" class="node node--5" />
-        <!-- Connessioni -->
-        <line x1="60" y1="60" x2="160" y2="30" class="edge" />
-        <line x1="160" y1="30" x2="200" y2="90" class="edge" />
-        <line x1="200" y1="90" x2="300" y2="50" class="edge" />
-        <line x1="300" y1="50" x2="340" y2="95" class="edge" />
-        <line x1="60" y1="60" x2="200" y2="90" class="edge edge--secondary" />
-        <line x1="160" y1="30" x2="300" y2="50" class="edge edge--secondary" />
-      </svg>
+    <!-- Logo principale -->
+    <div class="hero__logo animate-in">
+      <img
+        src="/logo-horizontal.png"
+        alt="Agent Engineering Studio"
+        class="hero__logo-img"
+        width="480"
+        height="120"
+      />
     </div>
 
-    <h1 class="hero__title animate-in animate-delay-1">
-      Agent <span class="hero__accent">Engineering</span> Studio
-    </h1>
-
-    <p class="hero__tagline animate-in animate-delay-2">
+    <p class="hero__tagline animate-in animate-delay-1">
       Il laboratorio dove le idee diventano AI agents.
     </p>
 
-    <p class="hero__subtitle animate-in animate-delay-3">
+    <p class="hero__subtitle animate-in animate-delay-2">
       Starter kit, template, demo end-to-end e best practice &mdash; dal concept alla prima release.
     </p>
   </div>
@@ -47,52 +35,27 @@
     text-align: center;
   }
 
-  .hero__nodes {
+  .hero__logo {
     margin-bottom: var(--space-xl);
     display: flex;
     justify-content: center;
   }
 
-  .nodes-svg {
+  .hero__logo-img {
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
     height: auto;
+    filter: drop-shadow(0 0 30px rgba(0, 136, 204, 0.3));
+    animation: logo-glow 4s ease-in-out infinite;
   }
 
-  .node {
-    fill: var(--color-accent);
-    animation: pulse-glow 3s ease-in-out infinite;
-  }
-
-  .node--1 { animation-delay: 0s; }
-  .node--2 { animation-delay: 0.5s; }
-  .node--3 { animation-delay: 1s; }
-  .node--4 { animation-delay: 1.5s; }
-  .node--5 { animation-delay: 2s; }
-
-  .edge {
-    stroke: var(--color-accent);
-    stroke-width: 1.5;
-    opacity: 0.3;
-    animation: pulse-glow 3s ease-in-out infinite;
-  }
-
-  .edge--secondary {
-    stroke-dasharray: 4 4;
-    opacity: 0.15;
-  }
-
-  .hero__title {
-    font-family: var(--font-heading);
-    font-size: clamp(1.8rem, 5vw, 3rem);
-    font-weight: 700;
-    line-height: 1.2;
-    color: var(--color-text);
-    margin-bottom: var(--space-md);
-  }
-
-  .hero__accent {
-    color: var(--color-accent);
+  @keyframes logo-glow {
+    0%, 100% {
+      filter: drop-shadow(0 0 20px rgba(0, 136, 204, 0.2));
+    }
+    50% {
+      filter: drop-shadow(0 0 40px rgba(0, 136, 204, 0.4));
+    }
   }
 
   .hero__tagline {

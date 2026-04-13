@@ -16,7 +16,7 @@ const {
 } = Astro.props;
 
 const canonicalUrl = 'https://agentengeering.it/';
-const ogImage = new URL('/og-image.png', canonicalUrl).href;
+const ogImage = new URL('/logo-horizontal.png', canonicalUrl).href;
 ---
 
 <!DOCTYPE html>
@@ -31,6 +31,7 @@ const ogImage = new URL('/og-image.png', canonicalUrl).href;
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/logo-icon.png" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -81,7 +82,7 @@ const ogImage = new URL('/og-image.png', canonicalUrl).href;
 
   <!-- Easter egg console message -->
   <script is:inline>
-    console.log('%c\uD83D\uDD2C Agent Engineering Studio', 'font-size:16px;font-weight:bold;color:#00e5ff');
+    console.log('%c\uD83D\uDD2C Agent Engineering Studio', 'font-size:16px;font-weight:bold;color:#2196F3');
     console.log('%cVuoi contribuire? \u2192 github.com/agent-engineering-studio', 'font-size:12px;color:#e0e6ed');
   </script>
 </body>
