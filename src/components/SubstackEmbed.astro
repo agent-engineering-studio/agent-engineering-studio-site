@@ -1,10 +1,10 @@
 ---
 /*
- * SubstackEmbed.astro — Newsletter Substack di Giuseppe Zileni
- * URL: https://gzileni.substack.com
+ * SubstackEmbed.astro — Newsletter Substack di Agent Engineering Studio
+ * URL: https://agentengineeringstudio.substack.com
  *
- * L'iframe ha sfondo bianco fisso (non restilizzabile via CSS perché vive su substack.com).
- * Per integrarsi al tema dark, la card che lo contiene è bianca così l'iframe si fonde.
+ * L'iframe usa ?transparent=1&light=1: sfondo trasparente, testo in light mode (scuro).
+ * La card che lo contiene resta bianca così il form del modulo è sempre leggibile.
  *
  * Props:
  *  - lang: 'it' | 'en'
@@ -79,10 +79,10 @@ const t = {
 
       <div class="substack-card__embed-wrap">
         <iframe
-          src="https://gzileni.substack.com/embed"
+          src="https://agentengineeringstudio.substack.com/embed?transparent=1&light=1"
           width="480"
           height="320"
-          style="border: 1px solid #EEE; background: white"
+          style="border: 0; background: transparent"
           frameborder="0"
           scrolling="no"
           title="Substack subscription form"
