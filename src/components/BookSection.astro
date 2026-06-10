@@ -109,10 +109,10 @@ const books = dataByLang.books;
                   </span>
                 ) : (
                   <img
-                    src="/badges/available_at_amazon_en_horizontal_drk.png"
+                    src="/badges/available_at_amazon_en_vertical.png"
                     alt="Available at Amazon"
-                    width="140"
-                    height="36"
+                    width="160"
+                    height="77"
                     loading="lazy"
                   />
                 )}
@@ -273,8 +273,14 @@ const books = dataByLang.books;
   }
 
   .book-card__badge img {
-    height: 32px;
-    width: auto;
+    height: auto;
+    width: 160px;
+    max-width: 100%;
+    display: block;
+    background: #fff;
+    padding: 0.5em 0.7em;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   .book-card__coming-soon {

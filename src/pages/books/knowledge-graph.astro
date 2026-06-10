@@ -114,11 +114,6 @@ const bonuses = [
               </div>
             ) : (
               <>
-                <div class="book-hero__actions">
-                  <a href={AMAZON_IT_URL} target="_blank" rel="noopener noreferrer" class="btn-amazon">
-                    Acquista su Amazon
-                  </a>
-                </div>
                 <div class="book-hero__badge-row">
                   <a
                     href={AMAZON_IT_URL}
@@ -127,11 +122,11 @@ const bonuses = [
                     aria-label="Available at Amazon"
                   >
                     <img
-                      src="/badges/available_at_amazon_en_horizontal_drk.png"
+                      src="/badges/available_at_amazon_en_vertical.png"
                       alt="Available at Amazon"
                       class="amazon-badge-img"
-                      width="180"
-                      height="46"
+                      width="220"
+                      height="106"
                       loading="eager"
                     />
                   </a>
@@ -272,9 +267,6 @@ const bonuses = [
             </div>
           ) : (
             <>
-              <a href={AMAZON_IT_URL} target="_blank" rel="noopener noreferrer" class="btn-amazon btn-amazon--lg">
-                Acquista su Amazon
-              </a>
               <a
                 href={AMAZON_IT_URL}
                 target="_blank"
@@ -282,11 +274,11 @@ const bonuses = [
                 aria-label="Available at Amazon"
               >
                 <img
-                  src="/badges/available_at_amazon_en_horizontal_drk.png"
+                  src="/badges/available_at_amazon_en_vertical.png"
                   alt="Available at Amazon"
-                  class="amazon-badge-img"
-                  width="180"
-                  height="46"
+                  class="amazon-badge-img amazon-badge-img--lg"
+                  width="260"
+                  height="125"
                   loading="lazy"
                 />
               </a>
@@ -466,66 +458,29 @@ const bonuses = [
   }
 
   /* ── Amazon CTA ── */
-  .book-hero__actions {
-    display: flex;
-    align-items: center;
-    gap: var(--space-md);
-    flex-wrap: wrap;
-    margin-bottom: var(--space-md);
-  }
-
   .book-hero__badge-row {
     margin-bottom: var(--space-sm);
   }
 
-  .btn-amazon {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-sm);
-    padding: 0.7em 1.6em;
-    background: #ff9900;
-    color: #0a0e17;
-    font-family: var(--font-heading);
-    font-size: 0.85rem;
-    font-weight: 700;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    transition: background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
-  }
-
-  .btn-amazon:hover {
-    background: #ffad33;
-    color: #0a0e17;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 24px rgba(255, 153, 0, 0.35);
-  }
-
-  .btn-amazon--secondary {
-    background: transparent;
-    color: #ff9900;
-    border: 1px solid #ff9900;
-  }
-
-  .btn-amazon--secondary:hover {
-    background: rgba(255, 153, 0, 0.1);
-    color: #ffad33;
-    border-color: #ffad33;
-  }
-
-  .btn-amazon--sm {
-    font-size: 0.78rem;
-    padding: 0.5em 1.2em;
-  }
-
-  .btn-amazon--lg {
-    font-size: 1rem;
-    padding: 0.8em 2em;
-  }
-
   .amazon-badge-img {
-    height: 40px;
-    width: auto;
+    height: auto;
+    width: 220px;
+    max-width: 100%;
     display: block;
+    background: #fff;
+    padding: 0.6em 0.9em;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .amazon-badge-img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(255, 153, 0, 0.25);
+  }
+
+  .amazon-badge-img--lg {
+    width: 260px;
   }
 
   .trademark {
@@ -1103,7 +1058,7 @@ const bonuses = [
       text-align: center;
     }
     .book-hero__subtitle { margin-left: auto; margin-right: auto; }
-    .book-hero__actions { justify-content: center; }
+    .book-hero__badge-row { display: flex; justify-content: center; }
     .coming-soon-banner { margin-left: auto; margin-right: auto; }
     .cover-3d { width: 200px; }
     .formats__grid { grid-template-columns: 1fr; }
