@@ -12,12 +12,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Footer from '../../components/Footer.astro';
 import SubstackEmbed from '../../components/SubstackEmbed.astro';
 
-const AMAZON_IT_URL = 'https://www.amazon.it/gp/product/B0GWRX64Z8/ref=ox_sc_act_title_1?smid=A1FPE5JXJST57&psc=1';
+const AMAZON_IT_URL = 'https://www.amazon.it/dp/B0GWRRK651';
 const GITHUB_DISCUSSIONS_URL = 'https://github.com/orgs/agent-engineering-studio/discussions';
 
-// Il libro è in revisione editoriale: i link Amazon vengono disabilitati
-// finché la pubblicazione non è confermata.
-const COMING_SOON = true;
+const COMING_SOON = false;
 
 const parts = [
   { number: 'I', title: 'Fondamenti dei Knowledge Graph', chapters: '1-4', desc: 'Teoria KG, modelli dati (RDF, Property Graph), query Cypher/SPARQL, ontologie OWL e ragionamento' },
