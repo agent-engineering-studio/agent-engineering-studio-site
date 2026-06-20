@@ -15,12 +15,22 @@ const t = {
     sectionAria: 'Progetti open source',
     heading: 'Progetti',
     intro:
-      'Progetto pubblico legato al libro <strong>"AI che Ragiona"</strong>. Altri repository sono in revisione e verranno pubblicati progressivamente.',
+      'Progetti open source dello studio: <strong>opendata-ai</strong> (open data civici) e <strong>knowledge-graph</strong> (companion del libro <strong>"AI che Ragiona"</strong>). Altri repository verranno pubblicati progressivamente.',
     repoLink: 'Vai al repo',
     orgLink: 'Org GitHub',
     repoAria: (title: string) => `Vai al repository ${title} su GitHub`,
     statusDev: 'In Development',
     projects: [
+      {
+        slug: 'opendata-ai',
+        icon: '🛰️',
+        title: 'opendata-ai',
+        statusClass: 'status--dev',
+        description:
+          'Accesso conversazionale agli open data italiani ed europei: un backend AI interroga in parallelo CKAN, ISTAT/Eurostat/OCSE (SDMX), OpenCoesione, OpenStreetMap e ISPRA, misura la maturità open data (ODM 2025) di un ente e la trasforma in progetti per il territorio — citando solo fonti ufficiali.',
+        stack: ['Python', 'FastAPI', 'FastMCP', 'A2A', 'Claude / Ollama', 'Next.js 15', 'PostGIS'],
+        repoUrl: 'https://github.com/agent-engineering-studio/opendata-ai',
+      },
       {
         slug: 'knowledge-graph',
         icon: '🧠',
@@ -38,12 +48,22 @@ const t = {
     sectionAria: 'Open source projects',
     heading: 'Projects',
     intro:
-      'Public project linked to the book <strong>"AI that Reasons"</strong>. Other repositories are under review and will be published progressively.',
+      'Open-source projects from the studio: <strong>opendata-ai</strong> (civic open data) and <strong>knowledge-graph</strong> (companion to the book <strong>"AI that Reasons"</strong>). More repositories will be published progressively.',
     repoLink: 'View repo',
     orgLink: 'GitHub Org',
     repoAria: (title: string) => `Go to the ${title} repository on GitHub`,
     statusDev: 'In Development',
     projects: [
+      {
+        slug: 'opendata-ai',
+        icon: '🛰️',
+        title: 'opendata-ai',
+        statusClass: 'status--dev',
+        description:
+          'Conversational access to Italian and European open data: an AI backend fans out across CKAN, ISTAT/Eurostat/OECD (SDMX), OpenCoesione, OpenStreetMap and ISPRA, measures an entity’s open-data maturity (ODM 2025) and turns it into projects for the territory — citing only official sources.',
+        stack: ['Python', 'FastAPI', 'FastMCP', 'A2A', 'Claude / Ollama', 'Next.js 15', 'PostGIS'],
+        repoUrl: 'https://github.com/agent-engineering-studio/opendata-ai',
+      },
       {
         slug: 'knowledge-graph',
         icon: '🧠',
