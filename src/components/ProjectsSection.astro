@@ -15,7 +15,7 @@ const t = {
     sectionAria: 'Progetti open source',
     heading: 'Progetti',
     intro:
-      'Progetti open source dello studio: <strong>opendata-ai</strong> (open data civici) e <strong>knowledge-graph</strong> (companion del libro <strong>"AI che Ragiona"</strong>). Altri repository verranno pubblicati progressivamente.',
+      'Progetti open source dello studio: <strong>opendata-ai</strong> (open data civici), <strong>mcp-geo-server</strong> (GeoServer in linguaggio naturale) e <strong>knowledge-graph</strong> (companion del libro <strong>"AI che Ragiona"</strong>). Altri repository verranno pubblicati progressivamente.',
     repoLink: 'Vai al repo',
     siteLink: 'Apri il progetto',
     orgLink: 'Org GitHub',
@@ -44,6 +44,17 @@ const t = {
         liveUrl: undefined,
         repoUrl: 'https://github.com/agent-engineering-studio/knowledge-graph',
       },
+      {
+        slug: 'mcp-geo-server',
+        icon: '🗺️',
+        title: 'mcp-geo-server',
+        statusClass: 'status--dev',
+        description:
+          'Server MCP intelligente per pilotare GeoServer in linguaggio naturale (Microsoft Agent Framework): un\'interfaccia chat + mappa risolve la richiesta nei layer giusti e li rende su mappa con legenda tematica. Bootstrap idempotente di shapefile in PostGIS, stili SLD tematici guidati da configurazione e catalogo domain-agnostic. Stack Docker nativo arm64/amd64.',
+        stack: ['Python', 'Microsoft Agent Framework', 'FastAPI', 'GeoServer', 'PostGIS', 'Leaflet', 'Claude / Ollama', 'Docker'],
+        liveUrl: undefined,
+        repoUrl: 'https://github.com/agent-engineering-studio/mcp-geo-server',
+      },
     ],
   },
   en: {
@@ -51,7 +62,7 @@ const t = {
     sectionAria: 'Open source projects',
     heading: 'Projects',
     intro:
-      'Open-source projects from the studio: <strong>opendata-ai</strong> (civic open data) and <strong>knowledge-graph</strong> (companion to the book <strong>"AI that Reasons"</strong>). More repositories will be published progressively.',
+      'Open-source projects from the studio: <strong>opendata-ai</strong> (civic open data), <strong>mcp-geo-server</strong> (GeoServer in natural language) and <strong>knowledge-graph</strong> (companion to the book <strong>"AI that Reasons"</strong>). More repositories will be published progressively.',
     repoLink: 'View repo',
     siteLink: 'Open the project',
     orgLink: 'GitHub Org',
@@ -79,6 +90,17 @@ const t = {
         stack: ['Python', 'FastAPI', 'LangGraph', 'Neo4j', 'Redis', 'FastMCP', 'Next.js 15'],
         liveUrl: undefined,
         repoUrl: 'https://github.com/agent-engineering-studio/knowledge-graph',
+      },
+      {
+        slug: 'mcp-geo-server',
+        icon: '🗺️',
+        title: 'mcp-geo-server',
+        statusClass: 'status--dev',
+        description:
+          'Intelligent MCP server to drive GeoServer in natural language (Microsoft Agent Framework): a chat + map UI resolves a request to the right layers and renders them with a thematic legend. Idempotent shapefile bootstrap into PostGIS, config-driven thematic SLD styles and a domain-agnostic catalog. Native arm64/amd64 Docker stack.',
+        stack: ['Python', 'Microsoft Agent Framework', 'FastAPI', 'GeoServer', 'PostGIS', 'Leaflet', 'Claude / Ollama', 'Docker'],
+        liveUrl: undefined,
+        repoUrl: 'https://github.com/agent-engineering-studio/mcp-geo-server',
       },
     ],
   },
